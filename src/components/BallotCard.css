@@ -1,0 +1,18 @@
+.ballot-card{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.candidate-img{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+}
+
+.radio-btn{
+    transform: scale(1.25);
+}

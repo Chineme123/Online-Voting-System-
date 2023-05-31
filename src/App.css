@@ -1,0 +1,77 @@
+::-webkit-scrollbar{
+  display: none;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(./assets/aditya-joshi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* animation: change 60s infinite ; */
+}
+
+.home-content{
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.message{
+  /* border: 1px solid white; */
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  translate: 12vw 15vh;
+}
+.message .part-one, .message .part-two{
+  /* border: 1px solid white; */
+  height: 100%;
+  width: 100%;
+  color: #3db39e;
+  overflow: hidden;
+}
+
+.message .part-one p, .message .part-two p{
+  font-size: 40px;
+  font-weight: 800;
+  text-align: justify;
+  align-self: center;
+}
+
+/* .message .part-one p{
+  animation: disappear-one 3s ease 10s infinite;
+}
+
+.message .part-two p{
+  animation: disappear-two 3s ease 10s infinite;
+} */
+
+@keyframes disappear-one {
+  0%{
+    transform: translateY(0%);
+  }
+
+  100%{
+    transform: translateY(-150%);
+  }
+}
+
+@keyframes disappear-two {
+  0%{
+    transform: translateY(0%);
+  }
+
+  100%{
+    transform: translateY(150%);
+  }
+}

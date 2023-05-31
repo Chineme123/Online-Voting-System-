@@ -1,0 +1,46 @@
+.body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.gif-embed{
+    /* border: 1px solid; */
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    margin-top: 1rem;
+    animation: image 5s ease 0s infinite both alternate-reverse;
+    border-radius: 50%;
+}
+
+.success-message{
+    align-self: center;
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.suggestion{
+    align-self: center;
+    margin-top: 4rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@keyframes image {
+    0%{
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        transform: scale(1);
+    }
+
+    50%{
+        box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+    }
+
+    100%{
+        box-shadow: 16px 17px 18px rgba(0, 0, 0, 0.5);
+        transform: scale(1.15);
+    }
+}

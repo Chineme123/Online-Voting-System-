@@ -1,0 +1,70 @@
+.body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    /* border: 1px solid; */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 50%;
+    height: 65vh;
+    overflow-y: auto;
+}
+
+.aside{
+    border: 1px solid;
+    width: 30%;
+    position: fixed;
+    right: 0;
+    top: 22vh;
+    height: 55vh;
+    padding: 0.2rem;
+    /* background-color: #b5bbbb; */
+}
+
+.profile{
+    /* border: 1px solid; */
+    border-bottom: 0.5px solid #888;
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic{
+    border: 1px solid;
+    height: 65px;
+    width: 65px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gov-name{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.gov-name .label{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+}
+
+.gov-name .value{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+}
+
+.gov-name .label span, .gov-name .value span{
+    border-bottom: 0.5px solid #888;
+}

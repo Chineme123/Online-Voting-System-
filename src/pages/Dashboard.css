@@ -4,24 +4,32 @@
     flex-direction: column;
 }
 
+.content{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 175px);
+}
+
 .menu{
     /* border: 1px solid; */
     margin-bottom: 1rem;
     margin-top: 1rem;
     width: 50%;
-    height: 65vh;
+    height: 50vh;
     overflow-y: auto;
 }
 
 .aside{
-    border: 1px solid;
+    border-radius: 15px;
     width: 30%;
-    position: fixed;
-    right: 0;
-    top: 22vh;
-    height: 55vh;
+    height: 70vh;
     padding: 0.2rem;
-    /* background-color: #b5bbbb; */
+    background-color: #3DB39E;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
 .profile{

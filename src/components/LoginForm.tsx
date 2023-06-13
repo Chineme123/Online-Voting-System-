@@ -1,26 +1,36 @@
-import Button from "./Button"
-import './LoginForm.css'
+import { useNavigate } from "react-router-dom";
+import {ReactNode} from 'react'
+import "./LoginForm.css";
 
-interface Props{
-  link: string;
+interface Props {
   image: string;
-  placeHolder: string;
   btname: string;
+  imgClass: string;
+  to: string;
+  children: ReactNode;
 }
 
+const LoginForm = ({ image, btname, imgClass, to, children }: Props) => {
+  const navigate = useNavigate();
 
-const LoginForm = ({link, image, placeHolder, btname} : Props ) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // const form = event.target;
+    // Access form values using form.elements or other form library methods
+    console.log("Form submitted!");
+    navigate(to);
+  };
+
   return (
     <div className="form">
-        <div className="form-div-one">
-          <input type="text" placeholder = {placeHolder}/>
-          <Button buttonName={btname}  className="button" disabled = {false} to = {link}/>
-        </div>
-        <div className="form-div-two">
-          <img src= {image} alt="default" />
-        </div>
-    </div>
-  )
-}
+      <form action="#" className="form-div-one" onSubmit={handleSubmit}>
+        {children}
+        <input type="submit" value={btname} />
+      </form>
 
-export default LoginForm
+      <img src={image} alt="default" className={imgClass} />
+    </div>
+  );
+};
+
+export default LoginForm;

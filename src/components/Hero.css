@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.hero, .hero-plus{
+    /* border: 1px solid; */
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hero-plus{
+    flex-direction: row-reverse;
+    justify-content: safe;
+}
+
+.hero img, .hero-plus img{
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.text{
+    /* border: 1px solid; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

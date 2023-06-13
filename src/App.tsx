@@ -1,33 +1,26 @@
-import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Button from "./components/Button";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Username from "./pages/Username";
+import Password from "./pages/Password";
+import Dashboard from "./pages/Dashboard";
+import Vote from "./pages/Vote";
+import Auth from "./pages/Auth";
+import Confirmation from "./pages/Confirmation";
 
 const App = () => {
   return (
-    <>
-      <div className="container">
-        <NavBar className="home" loginState="LOGIN" navbarBTN="home-navbar-button"/>
-
-        <div className="message">
-          <div className="part-one">
-            <p>Voting should be Safe,</p>
-          </div>
-          <div className="part-two">
-            <p>Secure and Convenient</p>
-          </div>
-        </div>
-
-        <Button
-          buttonName={"LOGIN"}
-          className="home-button"
-          disabled={false}
-          to="/username"
-        />
-      </div>
-      <div className="home-content"></div>
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/username" Component={Username} />
+        <Route path="/password" Component={Password} />
+        <Route path="/dashboard" Component={Dashboard} />
+        <Route path="/vote/:electionId" Component={Vote} />
+        <Route path="/Auth" Component={Auth} />
+        <Route path="/confirmation" Component={Confirmation} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -1,31 +1,27 @@
+// import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
 interface Props {
+  Num: string;
   Name: string;
-  imgSrc: string;
-  link: string;
+  onClick: () => void;
 }
-const Card = ({ Name, imgSrc, link }: Props) => {
+const Card = ({ Name, Num, onClick }: Props) => {
+
+  // const handleClick: React.MouseEventHandler<HTMLDivElement> = () => {
+  //   navigate('/vote')
+  // }
+
   return (
-    <a href = {link}>
-      <div className="card">
+    <div className="card" onClick={onClick}>
+        <div className="election-number">
+          {Num}
+        </div>
+
         <div className="election-name">
-          <p>{Name}</p>
-        </div>
-
-        <div className="election-image">
-          <img src={imgSrc} alt="default" />
-        </div>
-
-        <div className="description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nam
-            modi vero ipsa quos tempore? Ipsa cupiditate facilis doloribus
-            nobis, est porro.
-          </p>
+          {Name}
         </div>
       </div>
-    </a>
   );
 };
 

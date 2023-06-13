@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-size: 20px;
+}
+  
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../assets/glen-carrie.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 20%;
+    box-shadow: 2px 2px 15px 9px rgba(0, 0, 0, 0.5);
+}
+  
+.home-content{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.isHighlighted{
+    font-weight: 800;
+    font-size: 25px;
+    color: #008080;
+}

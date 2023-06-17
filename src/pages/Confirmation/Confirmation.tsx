@@ -1,6 +1,6 @@
-import Button from "../components/Button";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+import Button from "../../components/Button/Button";
+import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/NavBar/NavBar";
 import Check from "../assets/checked.png";
 import "./Confirmation.css";
 

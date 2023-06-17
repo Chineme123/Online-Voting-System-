@@ -1,7 +1,7 @@
-import { ballotConfigs } from "../components/BallotConfig";
+import { ballotConfigs } from "../BallotConfig";
 import { useParams } from "react-router-dom";
 
-import BallotCard from "./BallotCard";
+import BallotCard from "../BallotCard/BallotCard";
 
 import "./Ballot.css";
 

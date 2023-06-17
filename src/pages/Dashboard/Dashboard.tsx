@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { ballotConfigs } from "../components/BallotConfig";
+import { ballotConfigs } from "../../components/BallotConfig";
 
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-import Card from "../components/Card";
+import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/NavBar/NavBar";
+import Card from "../../components/Card/Card";
 
 import "./Dashboard.css";
 import "./Body.css";

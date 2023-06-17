@@ -1,10 +1,11 @@
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
+import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
+import Hero from "../../components/Hero/Hero";
 import "./Home.css";
 import vote from "../assets/Vote.jpg";
 import face_reg from "../assets/Face_reg.jpg";
 import encrpty from "../assets/encryption.jpg";
+import Button from "../../components/Button/Button";
 
 const Home = () => {
   return (
@@ -31,6 +32,11 @@ const Home = () => {
           path={vote}
           name="hero"
         />
+        <div className="register">
+          <p>Be A Part Of The System</p>
+          <p>Register Now</p>
+          <Button buttonName={"REGISTER"} className={"register-btn"} disabled = {false} to="/registration"/>
+        </div>
         <Hero
           textDisplay={
             <div>

@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { ballotConfigs } from "../components/BallotConfig";
 
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-import Ballot from "../components/Ballot";
+import Footer from "../components/Footer/Footer";
+import NavBar from "../components/NavBar/NavBar";
+import Ballot from "../components/Ballot/Ballot";
 
 import './Body.css'
 

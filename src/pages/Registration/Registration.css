@@ -1,0 +1,9 @@
+.reg-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration{
+    width: 50%;
+}

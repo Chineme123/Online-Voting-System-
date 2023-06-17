@@ -1,6 +1,6 @@
-import LoginForm from "../components/LoginForm";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import LoginForm from "../components/LoginForm/LoginForm";
+import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
 import "./Body.css";
 import login from "../assets/Man.jpg";
 

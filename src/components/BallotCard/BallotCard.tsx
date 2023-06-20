@@ -5,13 +5,19 @@ import "./BallotCard.css";
 interface Props {
   i: number;
   onVote: (candidateId: number, vote: string) => void;
+  candidateId: number;
+  onCandidateSelect: (candidateId: number) => void;
 }
 
-const BallotCard = ({ i, onVote }: Props) => {
+const BallotCard = ({ i, onVote, onCandidateSelect, candidateId }: Props) => {
   const { electionId } = useParams();
 
   const handleVote = (vote: string) => {
     onVote(i, vote);
+  };
+
+  const handleCandidateSelection = () => {
+    onCandidateSelect(candidateId);
   };
 
   return (
@@ -23,6 +29,8 @@ const BallotCard = ({ i, onVote }: Props) => {
         className="radio-btn"
         value={ballotConfigs[Number(electionId)].candidates[i]}
         onChange={(e) => handleVote(e.target.value)}
+        onClick={handleCandidateSelection}
+        required
       />
 
       <div className="candidate-img">

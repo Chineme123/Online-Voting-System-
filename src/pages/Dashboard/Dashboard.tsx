@@ -6,7 +6,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import Card from "../../components/Card/Card";
 
 import "./Dashboard.css";
-import "./Body.css";
+import '../Body.css'
 
 const Dashboard = () => {
   const name = "Chineme Dimkpa";

@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import {ReactNode} from 'react'
 import "./LoginForm.css";
 
@@ -6,24 +5,15 @@ interface Props {
   image: string;
   btname: string;
   imgClass: string;
-  to: string;
   children: ReactNode;
+  onsubmit: (event: React.FormEvent) => void;
 }
 
-const LoginForm = ({ image, btname, imgClass, to, children }: Props) => {
-  const navigate = useNavigate();
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    // const form = event.target;
-    // Access form values using form.elements or other form library methods
-    console.log("Form submitted!");
-    navigate(to);
-  };
+const LoginForm = ({ image, btname, imgClass, onsubmit, children }: Props) => {
 
   return (
     <div className="form">
-      <form action="#" className="form-div-one" onSubmit={handleSubmit}>
+      <form action="#" className="form-div-one" onSubmit={onsubmit}>
         {children}
         <input type="submit" value={btname} />
       </form>

@@ -1,7 +1,7 @@
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
-import Check from "../assets/checked.png";
+import Check from "../../assets/checked.png";
 import "./Confirmation.css";
 
 const Confirmation = () => {

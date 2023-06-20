@@ -8,23 +8,9 @@ import Ballot from "../components/Ballot/Ballot";
 import './Body.css'
 
 const Vote = () => {
+
+  
   const { electionId } = useParams();
-
-  function count() {
-    let result = [];
-
-    for (
-      let x = 0;
-      x < ballotConfigs[Number(electionId)].candidates.length;
-      x++
-    ) {
-      result.push(x);
-    }
-
-    return result;
-  }
-
-  const count_plus = count();
 
   if (!electionId) {
     return <div>No ballot found for this election.</div>;
@@ -42,11 +28,7 @@ const Vote = () => {
 
       <h3>{ballotConfigs[Number(electionId)].title}</h3>
 
-      {count_plus.map((j) => (
-        <Ballot i={j} />
-      ))}
-
-      <button type="submit">Cast Your Vote</button>
+      <Ballot />
 
       <Footer />
     </div>

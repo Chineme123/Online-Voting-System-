@@ -18,7 +18,7 @@ const NavBar = ({ className, loginState, navbarBTN }: Props) => {
         className={navbarBTN}
         buttonName={loginState}
         disabled={false}
-        to="/username"
+        to="/authenticate"
       />
     </nav>
   );
